@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   get 'bienvenido', to: 'home#index'
 
   root to: 'home#index'
+
+  #Ruta Design system
+  get 'design_systems/show'
 end
