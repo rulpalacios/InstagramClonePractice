@@ -1,0 +1,20 @@
+$colorb:'30AF7';
+$colorc:'c4c4c4';
+
+.primary{
+    background-color: $colorb;
+    position: absolute;
+    width: 363px;
+    height: 43px;
+    left: 819px;
+    top: 438px;
+}
+
+.secondary{
+    background-color: $colorc;
+    position: absolute;
+    width: 114px;
+    height: 43px;
+    left: 971px;
+    top: 930px;
+}

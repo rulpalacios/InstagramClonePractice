@@ -1,0 +1,28 @@
+$blanco:'FAFAFA';
+$gris:'c4c4c4';
+
+.rectanguloa {
+    position: absolute;
+    width: 481px;
+    height: 389px;
+    left: 763px;
+    top: 250px;
+
+    background: $blanco;
+    border: 1px solid $gris;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.rectangulob{
+    position: absolute;
+    width: 481px;
+    height: 95px;
+    left: 763px;
+    top: 667px;
+
+    background: $blanco;
+    border: 1px solid $gris;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
