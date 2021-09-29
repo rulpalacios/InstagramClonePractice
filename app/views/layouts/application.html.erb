@@ -11,6 +11,37 @@
   </head>
 
   <body>
+    <% if notice  %>
+      <p class="notice"><%= notice %></p>
+    <% end %>
+    
+    <% if alert  %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
+
+    <nav>
+      <li>
+          <%= link_to 'Inicio', root_path  %>
+      </li>
+      
+      <!-- Identificar si se ha iniciado sesion -->
+      <% if user_signed_in? %>
+          <li>
+              <%= link_to 'Design system', design_systems_path %>
+          </li>
+          <li>
+              <%= link_to 'Cerrar sesion', destroy_user_session_path, method: :delete %>
+          </li>
+      <% else %>
+          <li>
+              <%= link_to 'Iniciar sesion', new_user_session_path  %>
+          </li>
+          <li>
+              <%= link_to 'Registrarse', new_user_registration_path  %>
+          </li>
+      <% end %>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
